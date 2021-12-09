@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Pokémon{% endblock %}
+{% block title %}{{ pokemon.name }}{% endblock %}
 
 {% block body %}
-    <h1 class="text-center text-white p-3">Pokémon</h1>
+    <h1 class="text-center text-white p-3">Fiche de {{ pokemon.name }}</h1>
 
     <table class="table table-striped table-light m-auto justify-content-center w-50">
         <tbody>

@@ -3,7 +3,7 @@
 {% block title %}Pokédex{% endblock %}
 
 {% block body %}
-    <h1 class="text-center text-white p-3">Pokédex</h1>
+    <h1 class="text-center text-white p-3">{{ pokedex.name }}</h1>
 
     <table class="table table-striped table-light m-auto justify-content-center w-75">
         <tbody>
@@ -15,10 +15,15 @@
                 <th>Nom</th>
                 <td>{{ pokedex.name }}</td>
             </tr>
-            {# <tr>
+            <tr>
                 <th>Pokemons</th>
-                <td>{{ pokedex.pokemon.name }}</td>
-            </tr> #}
+                <td>
+                    {% for pokemon in pokedex.pokemon %}
+                        {{ pokemon.name }} <br>
+                    {% endfor %}
+                </td>
+            </tr>
+            
         </tbody>
     </table>
 

@@ -16,7 +16,7 @@ class PokemonType extends AbstractType
             ->add('type')
             ->add('height')
             ->add('weight')
-            ->add('pokedexes')
+            // ->add('pokedexes')
         ;
     }
 
