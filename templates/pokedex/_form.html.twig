@@ -1,0 +1,11 @@
+{{ form_start(form) }}
+    {{ form_widget(form._token) }}
+    <div class="text-center">
+    {{ form_widget(form) }}
+    <div class="text-center  p-3">
+    <button class="m-auto text-white p-2 bg-dark">{{ button_label|default('Sauvegarder') }}</button>
+    </button>
+    </div>
+    
+    </div>
+{{ form_end(form, {'render_rest' : false}) }}

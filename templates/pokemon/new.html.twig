@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouveau Pokemon{% endblock %}
+
+{% block body %}
+    <h1 class="text-center text-white p-3">Créer un Pokemon</h1>
+
+    {{ include('pokemon/_form.html.twig') }}
+
+    <div class="text-center p-3">
+    <button class="m-auto p-2 bg-dark">
+    <a class="text-white" href="{{ path('pokemon_index') }}">Retour à la liste</a>
+    </button>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,6 @@
+<form method="post" action="{{ path('pokedex_delete', {'id': pokedex.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ pokedex.id) }}">
+    <div class="text-center  p-3">
+    <button class="m-auto text-white p-2 bg-dark">Supprimer</button>
+    </div>
+</form>
